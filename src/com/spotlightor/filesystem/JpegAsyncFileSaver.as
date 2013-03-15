@@ -55,7 +55,7 @@ package com.spotlightor.filesystem
 			}catch (error:Error) {
 				Log.error(this, "Error occured for: " + _imageFile.url, error);
 			}
-			dispatchEvent(e);
+			dispatchEvent(new Event(Event.COMPLETE));
 		}
 		
 		public function dispose():void
